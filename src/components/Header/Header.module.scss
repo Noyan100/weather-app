@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .logoImg {
+      width: 65px;
+      height: 65px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .logoText {
+      color: #4793ff;
+      font-weight: 700;
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+  }
+  .choose {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    .chooseCity {
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+      background-color: #4793ff33;
+      padding: 9px 20px;
+      padding-right: 45px;
+      border-radius: 10px;
+    }
+    .chooseTheme {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    .choose {
+      .chooseTheme {
+        position: absolute;
+        right: 0;
+        top: 110px;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+html[data-theme="dark"] {
+  --componentbg: #4f4f4f;
+  --textcolor: #fff;
+  --selectbg: #4f4f4f;
+  --selectoptionbg1: #4f4f4f;
+  --selectoptionbg2: #999;
+  --tabbg: #4f4f4f;
+  --tabitembg: #2e3035;
+  --boxshadow: #b4b4b440;
+  --transition: background-color 0.7s;
+  background-color: #0d1117;
+  transition: background-color 0.7s;
+}
+
+html[data-theme="light"] {
+  --componentbg: #fff;
+  --textcolor: #000;
+  --selectbg: #4793ff33;
+  --selectoptionbg1: #fff;
+  --selectoptionbg2: #4793ff33;
+  --tabbg: #fff;
+  --tabitembg: #4793ff33;
+  --boxshadow: #b4b4b440;
+  --transition: background-color 0.7s;
+  background-color: #fff;
+  transition: background-color 0.7s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  a:hover {
+    color: #000;
+  }
+  a:link {
+    color: #000;
+  }
+  a:visited {
+    color: #000;
+  }
+  outline: none;
+}

@@ -1,0 +1,14 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  .wrapper {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: 1024px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+}
